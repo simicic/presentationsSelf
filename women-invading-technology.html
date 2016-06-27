@@ -17,9 +17,15 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		  if( window.location.search.match( /print-pdf/gi ) ) {
+		    var link = document.createElement( 'link' );
+		    link.rel = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href = 'css/print/pdf.css';
+		    document.getElementsByTagName( 'head' )[0].appendChild( link );
+		  }
 		</script>
 	</head>
 
@@ -51,7 +57,7 @@
 						<a href="http://www.ncwit.org/sites/default/files/legacy/pdf/BytheNumbers09.pdf">By The Numbers</a>
 					</p>
 				</section>
-				<section data-background="#E1DCE8">
+				<section>
 					<h2>Women are leading adopters in:</h2>
 					<ul>
 						<li>Internet usage</li>
@@ -66,10 +72,10 @@
 					</ul>
 					<a href="http://www.theatlantic.com/technology/archive/2012/06/sorry-young-man-youre-not-the-most-important-demographic-in-tech/258087/">Source</a>
 				</section>
-				<section data-background="#D5E8F5">
+				<section>
 					<img src="http://31.media.tumblr.com/4cdf4e4cc71b7ad058ac47b6f2854d26/tumblr_mi61n2qB3a1s410g9o2_r1_400.gif">
 				</section>
-				<section data-background="#F5EBD5">
+				<section>
 					<h2>So how come...?</h2>
 					<ul>
 						<li>Well paid</li>
@@ -80,7 +86,7 @@
 						<li>High demand</li>
 					</ul>
 				</section>
-				<section data-background="#F5EBD5">
+				<section>
 					<h2>Do we need more women?</h2>
 					<p> yes! </p>
 					<br>
@@ -90,7 +96,7 @@
 						<li>More professionals</li>
 					</ul>
 				</section>
-				<section data-background="#E1E6D8">
+				<section>
 					<h2>So why not?</h2>
 					<ul>
 						<li>They don't even consider it</li>
@@ -98,7 +104,7 @@
 						<li>They think they would not be good at it</li>
 					</ul>
 				</section>
-				<section data-background="#E1E6D8">
+				<section>
 					<h2>How is the situation in the real world?</h2>
 					<ul>
 						<li>Women are still less paid</li>
@@ -111,7 +117,7 @@
 						</p>
 					</ul>
 				</section>
-				<section data-background="#D9DADE">
+				<section>
 					<h2>There are organizations...</h2>
 					<ul>
 						<li><a href="http://www.ncwit.org/programs-campaigns/aspirations-computing">Aspirations in Computing</a></li>
@@ -127,7 +133,7 @@
 				<section>
 					<p><img src="images/RailsGirlsNl.png"></p>
 				</section>
-				<section data-background="#A5ADA6">
+				<section>
 					<h2>Beginners track</h2>
 					<ol>
 						<li>Fundamentals of Programming </li>
@@ -137,7 +143,7 @@
 						<li>Testing </li>
 					</ol>
 				</section>
-				<section data-background="#A5ADA6">
+				<section>
 					<h2>Advanced track</h2>
 					<ol>
 						<li>Gems, REST, best practices </li>
@@ -147,7 +153,7 @@
 						<li>Hosting, private VPS, configuration, deployment</li>
 					</ol>
 				</section>
-				<section data-background="#A5ADA6">
+				<section>
 					<h2>Coding katas</h2>
 					<ul>
 						<li>5 November, 2014</li>
@@ -156,10 +162,7 @@
 						<li>24 June, 2015</li>
 					</ul>
 				</section>
-				<section data-background="#F5DCBC">
-					<h2>Take away</h2>
-				</section>
-				<section data-background="#F5DCBC">
+				<section>
 					<h1>Thank you!</h1>
 					<p>GH: simicic</p>
 					<p>@pazinjanka</p>

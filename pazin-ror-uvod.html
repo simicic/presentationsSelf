@@ -17,9 +17,15 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		  if( window.location.search.match( /print-pdf/gi ) ) {
+		    var link = document.createElement( 'link' );
+		    link.rel = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href = 'css/print/pdf.css';
+		    document.getElementsByTagName( 'head' )[0].appendChild( link );
+		  }
 		</script>
 
 		<!--[if lt IE 9]>
@@ -39,7 +45,7 @@
 					</p>
 				</section>
 
-				<section data-background="#61444C">
+				<section>
 					<h2>Odabir tehnologije</h2>
 					<p>Lakoća izmjena</p>
 					<p>Vrijeme izrade</p>
@@ -47,7 +53,7 @@
 					<p>Performanse</p>
 				</section>
 
-				<section data-background="#007777">
+				<section>
 					<h2>Web tehnologije</h2>
 					<ul>
 						<li>Java (Struts, Spring)</li>
@@ -55,7 +61,7 @@
 					</ul>
 				</section>
 
-				<section data-background="#007777">
+				<section>
 					<h2>Web tehnologije</h2>
 					<ul>
 						<li>PHP (Zend, CakePHP, Code Igniter)</li>
@@ -64,7 +70,7 @@
 					</ul>
 				</section>
 
-				<section data-background="#007777">
+				<section>
 					<h2>Web tehnologije</h2>
 					<div>
 						<ul>
@@ -73,7 +79,7 @@
 					</div>
 				</section>
 
-				<section data-background="#007777">
+				<section>
 					<h2>Web tehnologije</h2>
 					<p>Top layer</p>
 					<ul>
@@ -83,7 +89,7 @@
 					</ul>
 				</section>
 
-				<section data-background="#007777">
+				<section>
 					<h2>Ostali standardi</h2>
 					<ul>
 						<li>PostgreSQL / MongoDB / Neo4J</li>
@@ -104,27 +110,27 @@
 					<img src="images/railsPowered.png"/>
 				</section>
 
-				<section data-background="#145E02">
+				<section>
 					<h2>Scrum</h2>
 					<img src="images/scrum3.jpg"/>
 				</section>
 
-				<section data-background="#145E02">
+				<section>
 					<h2>Pristup razvoju</h2>
 					<img src="images/process.png"/>
 				</section>
 
-				<section data-background="#145E02">
+				<section>
 					<h2>Pristup razvoju</h2>
 					<img src="images/processGlobal.png"/>
 				</section>
 
-				<section data-background="#145E02">
+				<section>
 					<h2>TDD</h2>
 					<img src="images/tdd_flow.gif"/>
 				</section>
 
-				<section data-background="#145E02">
+				<section>
 					<h2>CI</h2>
 					<ul>
 						<li><a href="https://www.codeship.io/">Codeship</a></li>
@@ -133,7 +139,7 @@
 					</ul>
 				</section>
 
-				<section data-background="#145E02">
+				<section>
 					<h2>Kvaliteta koda</h2>
 					<ul>
 						<li><a href="https://codeclimate.com/">Codeclimate</a></li>

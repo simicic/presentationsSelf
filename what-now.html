@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>...and now what?</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/print/pdf.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+		  if( window.location.search.match( /print-pdf/gi ) ) {
+		    var link = document.createElement( 'link' );
+		    link.rel = 'stylesheet';
+		    link.type = 'text/css';
+		    link.href = 'css/print/pdf.css';
+		    document.getElementsByTagName( 'head' )[0].appendChild( link );
+		  }
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>...and now what?</h1>
+					<p>
+						<small>Created by <a href="http://martinasimicic.com">Martina Simicic</a> / <a href="http://twitter.com/pazinjanka">@pazinjanka</a></small>
+					</p>
+				</section>
+				<section>
+					<img src="images/idea.gif"/>
+				</section>
+				<section>
+					<h3>Tutorials & courses</h3>
+					<p><a href="http://www.codecademy.com/">Codeacademy</a></p>
+					<p><a href="http://www.codeschool.com/">Codeschool</a></p>
+					<p><a href="http://www.codeavengers.com/">Code avengers</a></p>
+					<p><a href="http://teamtreehouse.com/">Treehouse</a></p>
+					<p><a href="http://tutsplus.com/">Tuts+</a></p>
+					<p><a href="http://www.w3schools.com/">W3schools</a></p>
+				</section>
+				<section>
+					<h3>Tutorials & courses</h3>
+					<p><a href="http://online.stanford.edu/courses">Stanford</a></p>
+					<p><a href="https://www.coursera.org/">Coursera</a></p>
+					<p><a href="https://www.edx.org/">edX</a></p>
+					<p><a href="https://www.udacity.com/">Udacity</a></p>
+					<p><a href="https://www.khanacademy.org/">Khan academy</a></p>
+				</section>
+				<section>
+					<h3>Rails reference</h3>
+					<p><a href="http://guides.rubyonrails.org/">Rails Guides</a></p>
+					<p><a href="http://ruby-doc.org/">Ruby docs</a></p>
+					<p><a href="http://railscasts.com/">Rails Casts</a></p>
+					<p><a href="http://stackoverflow.com/">Stack Overflow</a></p>
+				</section>
+				<section>
+					<p><a href="https://railsgirls.io/">RailsGirls.io</a></p>
+				</section>
+				<section>
+					<h3>Find like minded people</h3>
+					<p><a href="http://www.meetup.com/RailsGirls-NL/">RailsGirlsNL</a></p>
+					<p><a href="http://www.meetup.com/Amsterdam-rb/">Amsterdam.rb</a></p>
+					<p><a href="http://www.meetup.com/Utrecht-rb/">Utrecht.rb</a></p>
+				</section>
+				<section>
+					<img src="images/funfun.jpg"/>
+				</section>
+				<section>
+					<h3>How long does it take?</h3>
+				</section>
+				<section>
+					<h2>Don't forget to have fun!</h2>
+					<img src="images/boy.gif"/>
+				</section>
+				<section>
+					<h1>Thank you!</h1>
+					<p>GH: simicic</p>
+					<p>@pazinjanka</p>
+					<p>http://martinasimicic.com/</p>
+					<p>http://usecuriosity.com/</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				theme: 'beige',
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
